@@ -104,7 +104,7 @@ namespace Binarysharp.MemoryManagement.Memory
             var ret = NativeMethods.NtQueryInformationProcess(processHandle, ProcessInformationClass.ProcessBasicInformation, ref info, info.Size, IntPtr.Zero);
 
             // If the function succeeded
-            if (ret == 0)
+           // if (ret == 0)
                 return info;
 
             // Else, couldn't get the process info, throws an exception
