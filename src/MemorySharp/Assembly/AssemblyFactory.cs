@@ -1,11 +1,12 @@
 ﻿/*
+/*
  * MemorySharp Library
  * http://www.binarysharp.com/
  *
  * Copyright (C) 2012-2016 Jämes Ménétrey (a.k.a. ZenLulz).
  * This library is released under the MIT License.
  * See the file LICENSE for more information.
-*/
+#1#
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -450,3 +451,4 @@ namespace Binarysharp.MemoryManagement.Assembly
         #endregion
     }
 }
+*/

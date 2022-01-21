@@ -45,7 +45,7 @@ namespace Binarysharp.MemoryManagement
         /// <summary>
         /// Factory for generating assembly code.
         /// </summary>
-        public AssemblyFactory Assembly { get; protected set; }
+        //public AssemblyFactory Assembly { get; protected set; }
         #endregion
         #region IsDebugged
         /// <summary>
@@ -160,7 +160,7 @@ namespace Binarysharp.MemoryManagement
             Factories = new List<IFactory>();
             Factories.AddRange(
                 new IFactory[] {
-                    Assembly = new AssemblyFactory(this),
+                    //Assembly = new AssemblyFactory(this),
                     Memory = new MemoryFactory(this),
                     Modules = new ModuleFactory(this),
                     Threads = new ThreadFactory(this),

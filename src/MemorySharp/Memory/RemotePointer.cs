@@ -95,112 +95,112 @@ namespace Binarysharp.MemoryManagement.Memory
         /// Executes the assembly code in the remote process.
         /// </summary>
         /// <returns>The return value is the exit code of the thread created to execute the assembly code.</returns>
-        public T Execute<T>()
+        /*public T Execute<T>()
         {
             return MemorySharp.Assembly.Execute<T>(BaseAddress);
-        }
+        }*/
         /// <summary>
         /// Executes the assembly code in the remote process.
         /// </summary>
         /// <returns>The return value is the exit code of the thread created to execute the assembly code.</returns>
-        public IntPtr Execute()
+        /*public IntPtr Execute()
         {
             return Execute<IntPtr>();
-        }
+        }*/
         /// <summary>
         /// Executes the assembly code in the remote process.
         /// </summary>
         /// <param name="parameter">The parameter used to execute the assembly code.</param>
         /// <returns>The return value is the exit code of the thread created to execute the assembly code.</returns>
-        public T Execute<T>(dynamic parameter)
+        /*public T Execute<T>(dynamic parameter)
         {
             return MemorySharp.Assembly.Execute<T>(BaseAddress, parameter);
-        }
+        }*/
         /// <summary>
         /// Executes the assembly code in the remote process.
         /// </summary>
         /// <param name="parameter">The parameter used to execute the assembly code.</param>
         /// <returns>The return value is the exit code of the thread created to execute the assembly code.</returns>
-        public IntPtr Execute(dynamic parameter)
+        /*public IntPtr Execute(dynamic parameter)
         {
             return Execute<IntPtr>(parameter);
-        }
+        }*/
         /// <summary>
         /// Executes the assembly code in the remote process.
         /// </summary>
         /// <param name="callingConvention">The calling convention used to execute the assembly code with the parameters.</param>
         /// <param name="parameters">An array of parameters used to execute the assembly code.</param>
         /// <returns>The return value is the exit code of the thread created to execute the assembly code.</returns>
-        public T Execute<T>(CallingConventions callingConvention, params dynamic[] parameters)
+        /*public T Execute<T>(CallingConventions callingConvention, params dynamic[] parameters)
         {
             return MemorySharp.Assembly.Execute<T>(BaseAddress, callingConvention, parameters);
-        }
+        }*/
         /// <summary>
         /// Executes the assembly code in the remote process.
         /// </summary>
         /// <param name="callingConvention">The calling convention used to execute the assembly code with the parameters.</param>
         /// <param name="parameters">An array of parameters used to execute the assembly code.</param>
         /// <returns>The return value is the exit code of the thread created to execute the assembly code.</returns>
-        public IntPtr Execute(CallingConventions callingConvention, params dynamic[] parameters)
+        /*public IntPtr Execute(CallingConventions callingConvention, params dynamic[] parameters)
         {
             return Execute<IntPtr>(callingConvention, parameters);
-        }
+        }*/
         #endregion
         #region ExecuteAsync
         /// <summary>
         /// Executes asynchronously the assembly code in the remote process.
         /// </summary>
         /// <returns>The return value is an asynchronous operation that return the exit code of the thread created to execute the assembly code.</returns>
-        public Task<T> ExecuteAsync<T>()
+        /*public Task<T> ExecuteAsync<T>()
         {
             return MemorySharp.Assembly.ExecuteAsync<T>(BaseAddress);
-        }
+        }*/
         /// <summary>
         /// Executes asynchronously the assembly code in the remote process.
         /// </summary>
         /// <returns>The return value is an asynchronous operation that return the exit code of the thread created to execute the assembly code.</returns>
-        public Task<IntPtr> ExecuteAsync()
+        /*public Task<IntPtr> ExecuteAsync()
         {
             return ExecuteAsync<IntPtr>();
-        }
+        }*/
         /// <summary>
         /// Executes asynchronously the assembly code located in the remote process at the specified address.
         /// </summary>
         /// <param name="parameter">The parameter used to execute the assembly code.</param>
         /// <returns>The return value is an asynchronous operation that return the exit code of the thread created to execute the assembly code.</returns>
-        public Task<T> ExecuteAsync<T>(dynamic parameter)
+        /*public Task<T> ExecuteAsync<T>(dynamic parameter)
         {
             return MemorySharp.Assembly.ExecuteAsync<T>(BaseAddress, parameter);
-        }
+        }*/
         /// <summary>
         /// Executes asynchronously the assembly code located in the remote process at the specified address.
         /// </summary>
         /// <param name="parameter">The parameter used to execute the assembly code.</param>
         /// <returns>The return value is an asynchronous operation that return the exit code of the thread created to execute the assembly code.</returns>
-        public Task<IntPtr> ExecuteAsync(dynamic parameter)
+        /*public Task<IntPtr> ExecuteAsync(dynamic parameter)
         {
             return ExecuteAsync<IntPtr>(parameter);
-        }
+        }*/
         /// <summary>
         /// Executes asynchronously the assembly code located in the remote process at the specified address.
         /// </summary>
         /// <param name="callingConvention">The calling convention used to execute the assembly code with the parameters.</param>
         /// <param name="parameters">An array of parameters used to execute the assembly code.</param>
         /// <returns>The return value is an asynchronous operation that return the exit code of the thread created to execute the assembly code.</returns>
-        public Task<T> ExecuteAsync<T>(CallingConventions callingConvention, params dynamic[] parameters)
+        /*public Task<T> ExecuteAsync<T>(CallingConventions callingConvention, params dynamic[] parameters)
         {
             return MemorySharp.Assembly.ExecuteAsync<T>(BaseAddress, callingConvention, parameters);
-        }
+        }*/
         /// <summary>
         /// Executes asynchronously the assembly code located in the remote process at the specified address.
         /// </summary>
         /// <param name="callingConvention">The calling convention used to execute the assembly code with the parameters.</param>
         /// <param name="parameters">An array of parameters used to execute the assembly code.</param>
         /// <returns>The return value is an asynchronous operation that return the exit code of the thread created to execute the assembly code.</returns>
-        public Task<IntPtr> ExecuteAsync(CallingConventions callingConvention, params dynamic[] parameters)
+        /*public Task<IntPtr> ExecuteAsync(CallingConventions callingConvention, params dynamic[] parameters)
         {
             return ExecuteAsync<IntPtr>(callingConvention, parameters);
-        }
+        }*/
         #endregion
         #region GetHashCode (override)
         /// <summary>
