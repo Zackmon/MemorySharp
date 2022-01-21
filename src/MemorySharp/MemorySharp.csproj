@@ -6,7 +6,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageVersion>1.2.0.1</PackageVersion>
-    <Title>MemorySharp</Title>
+    <Title>MemorySharp_NoFASM</Title>
     <Authors>Binarysharp</Authors>
     <Description>MemorySharp is a C# based memory editing library targeting Windows applications, offering various functions to extract and inject data and codes into remote processes to allow interoperability.</Description>
     <Copyright>Copyright © 2012-2016 ZenLulz</Copyright>
@@ -15,6 +15,7 @@
     <FileVersion>1.2.0.1</FileVersion>
     <Version>1.2.0.1</Version>
     <RepositoryUrl>https://github.com/Zackmon/MemorySharp</RepositoryUrl>
+    <PackageId>MemorySharp_NoFASM</PackageId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DocumentationFile>bin\Debug\MemorySharp.XML</DocumentationFile>
@@ -29,6 +30,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <OutputPath>bin\x64\Release\</OutputPath>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
