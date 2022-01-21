@@ -19,10 +19,15 @@ jobs:
           dotnet-version: 6.0.x
           source-url: https://nuget.pkg.github.com/Zackmon/index.json
         env:
-          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}} 
+          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: Build Project
         working-directory: ${{github.workspace}}/src/MemorySharp
+        run: dotnet build -c Release --no-restore
+        
+      - name: Pack Project
+        working-directory: ${{github.workspace}}/src/MemorySharp
         run: dotnet pack -c Release -o out
-      - name: Publish Nuget to github
+        
+      - name: Publish Nuget to Github
         working-directory: ${{github.workspace}}/src/MemorySharp
         run: dotnet nuget push ./out/*.nupkg --skip-duplicate --no-symbols true
