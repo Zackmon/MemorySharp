@@ -20,6 +20,11 @@ jobs:
           source-url: https://nuget.pkg.github.com/Zackmon/index.json
         env:
           NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          
+      - name: Restore dependencies
+        run: dotnet restore
+        working-directory: ${{github.workspace}}/src/MemorySharp
+        
       - name: Build Project
         working-directory: ${{github.workspace}}/src/MemorySharp
         run: dotnet build -c Release --no-restore
