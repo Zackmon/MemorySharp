@@ -35,4 +35,4 @@ jobs:
         
       - name: Publish Nuget to Github
         working-directory: ${{github.workspace}}/src/MemorySharp
-        run: dotnet nuget push ./out/*.nupkg --skip-duplicate --no-symbols true
+        run: dotnet nuget push ./out/*.nupkg --skip-duplicate --no-symbols true --api-key ${{secrets.NUGET_KEY}} --source https://api.nuget.org/v3/index.json
